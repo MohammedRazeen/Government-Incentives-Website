@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Electric Vehicle Incentives</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #05386b;
+    }
+
+    p {
+        margin-bottom: 20px;
+        color: #05386b;
+    }
+
+    .contact-info {
+        margin-bottom: 30px;
+    }
+
+    .contact-info h2 {
+        color: #05386b;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        margin-bottom: 10px;
+        color: #05386b;
+    }
+
+    .contact-info a {
+        color: #5cdb95;
+        text-decoration: none;
+    }
+
+    form {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #05386b;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    form textarea {
+        resize: vertical;
+        height: 120px;
+    }
+
+    form input[type="submit"] {
+        background-color: #5cdb95;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #05386b;
+    }
+
+    /* CSS styles for the header */
+    header {
+        background-color: #5cdb95;
+        color: #05386b;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #05386b;
+    }
+
+    /* Media queries for responsiveness */
+    @media only screen and (max-width: 600px) {
+        .container {
+            max-width: 100%;
+            margin: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: calc(100% - 20px);
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">Government Incentives and Rebates for Electric Vehicle Purchases</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="responsivefeedback.html">Feedback</a></li>
+                <li><a href="responsivenewsletter.html">Newsletter</a></li>
+                <li><a href="responsiveprivacy.html">Privacy Policy & Terms of Use</a></li>
+                <li><a href="contactresponsive.html">Contact</a></li>
+                <li><a href="overview.html">Overview & Government Insentives</a></li>
+                <li><a href="ev_cars.html">EV Cars Models</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Contact Us - Electric Vehicle Incentives</h1>
+        
+        <div class="contact-info">
+            <h2>Contact Information:</h2>
+            <p><strong>Email:</strong> <a href="mailto:mohammedrazeen716@gmail.com">mohammedrazeen716@gmail.com</a></p>
+            <p><strong>Phone:</strong> 1234567890/0987654321</p>
+            <p><strong>Office Hours:</strong> Monday - Friday: 9:00 AM to 5:00 PM </p>
+            <p><strong>Mailing Address:</strong> Dr. K. M. Vasudevan Pillai Campus, Plot No. 10, Sector 16, New Panvel East, Panvel, Navi Mumbai, Maharashtra 410206</p>
+        </div>
+        
+        <form action="contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

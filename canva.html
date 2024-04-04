@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Text Example</title>
+    <style>
+        /* Add some basic styling to the canvas */
+        canvas {
+            border: 1px solid black;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="100"></canvas>
+
+    <script>
+        // Get the canvas element
+        var canvas = document.getElementById("myCanvas");
+
+        // Check if the browser supports HTML5 Canvas
+        if (canvas.getContext) {
+            // Get the canvas context (2D rendering context)
+            var ctx = canvas.getContext("2d");
+
+            // Set font properties
+            ctx.font = "30px Arial";
+            ctx.fillStyle = "white"; // Set text color
+            ctx.strokeStyle = "blue"; // Set outline color
+            ctx.lineWidth = 2; // Set outline thickness
+
+            // Draw the text with an outline
+            ctx.strokeText("Government Incentives", 50, 50); // (text, x, y)
+            ctx.fillText("Government Incentives", 50, 50); // (text, x, y)
+        } else {
+            // Canvas is not supported
+            alert("Canvas is not supported by your browser.");
+        }
+    </script>
+</body>
+</html>
